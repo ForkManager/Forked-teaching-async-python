@@ -11,11 +11,10 @@ async def delivery(name, mealtime):
 
 
 async def main():
-
     result = await asyncio.gather(
-        delivery("A", 1),
+        delivery("A", 3),
         delivery("B", 2),
-        delivery("C", 3),
+        delivery("C", 1),
     )
 
     print(result)
